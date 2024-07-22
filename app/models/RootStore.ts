@@ -1,16 +1,10 @@
 import { Instance, SnapshotOut, types } from "mobx-state-tree"
+import { ApiModel } from "./Api"
 
-/**
- * A RootStore model.
- */
 export const RootStoreModel = types.model("RootStore").props({
+  apiStore: types.optional(ApiModel, {}),
 })
 
-/**
- * The RootStore instance.
- */
+// export const store = RootStoreModel.create({})
 export interface RootStore extends Instance<typeof RootStoreModel> {}
-/**
- * The data of a RootStore.
- */
 export interface RootStoreSnapshot extends SnapshotOut<typeof RootStoreModel> {}

@@ -99,6 +99,16 @@ export const iconRegistry = {
   settings: require("../../assets/icons/settings.png"),
   view: require("../../assets/icons/view.png"),
   x: require("../../assets/icons/x.png"),
+  star: require("../../assets/icons/star.png"),
+  ac: require("../../assets/icons/ac.png"),
+  heart: require("../../assets/icons/heart.png"),
+  checkmark: require("../../assets/icons/check-mark.png"),
+  family: require("../../assets/icons/family.png"),
+  thumbsup: require("../../assets/icons/thumb-up.png"),
+  thumbsdown: require("../../assets/icons/thumb-down.png"),
+  pan: require("../../assets/icons/pan.png"),
+  location: require("../../assets/icons/location.png"),
+  close: require("../../assets/icons/close.png"),
 }
 
 const $imageStyleBase: ImageStyle = {

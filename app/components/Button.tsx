@@ -173,13 +173,13 @@ export function Button(props: ButtonProps) {
 }
 
 const $baseViewStyle: ViewStyle = {
-  minHeight: 56,
+  // minHeight: 56,
   borderRadius: 4,
   justifyContent: "center",
   alignItems: "center",
   flexDirection: "row",
-  paddingVertical: spacing.sm,
-  paddingHorizontal: spacing.sm,
+  // paddingVertical: 10,
+  // paddingHorizontal: 10,
   overflow: "hidden",
 }
 

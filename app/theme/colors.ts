@@ -1,9 +1,12 @@
 // TODO: write documentation for colors and palette in own markdown file and add links from here
 
+// import { SpecialPrice } from "app/components"
+// import { placeholder } from "i18n-js"
+
 const palette = {
   neutral100: "#FFFFFF",
   neutral200: "#F4F2F1",
-  neutral300: "#D7CEC9",
+  neutral300: "rgba(215, 206, 201, 0.3)",
   neutral400: "#B6ACA6",
   neutral500: "#978F8A",
   neutral600: "#564E4A",
@@ -32,9 +35,16 @@ const palette = {
 
   angry100: "#F2D6CD",
   angry500: "#C03403",
+  specialPrice: "#0096FF",
+  lightGreen: "#00D100",
+  priceGrey: "#9ca7a9",
+  main: "#365361",
+  orange: "#e45c37",
 
   overlay20: "rgba(25, 16, 21, 0.2)",
   overlay50: "rgba(25, 16, 21, 0.5)",
+  borderColor: "#774384",
+  white: "#FFFFFF",
 } as const
 
 export const colors = {
@@ -44,14 +54,22 @@ export const colors = {
    * semantic names as much as possible.
    */
   palette,
+  borderColor: palette.borderColor,
+  white: palette.white,
   /**
    * A helper for making something see-thru.
    */
   transparent: "rgba(0, 0, 0, 0)",
+  priceGrey: palette.priceGrey,
+  specialPrice: palette.specialPrice,
+  // lightGreen: palette.lightGreen,
+  main: palette.main,
+  orange: palette.orange,
   /**
    * The default text color in many components.
    */
   text: palette.neutral800,
+
   /**
    * Secondary text information.
    */
@@ -60,6 +78,7 @@ export const colors = {
    * The default color of the screen background.
    */
   background: palette.neutral200,
+
   /**
    * The default border color.
    */
